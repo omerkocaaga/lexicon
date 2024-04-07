@@ -3,20 +3,35 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-rgb: 255, 255, 255;
+	--color-focus: 0, 0, 0;
+	--color-gray: 128, 128, 128;
+	--color-alert: 255, 0, 0;
+	--color-invert: 255, 255, 255;
+	--color-disabled: 169, 169, 169;
+	--color-background: 255, 255, 255;
+	--color-elevation: 243, 244, 246;
+	--color-brand: 8, 194, 105;
+	/* --alpha: 255 255 255 20; */
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-rgb: 0, 0, 0;
+		--color-focus: 255, 255, 255;
+		--color-gray: 128, 128, 128;
+		--color-alert: 255, 0, 0;
+		--color-invert: 255, 255, 255;
+		--color-disabled: 169, 169, 169;
+		--color-background: 0, 0, 0;
+		--color-elevation: 18, 19, 23;
+		--color-brand: 8, 194, 105;
+		/* --alpha: 255 255 255 20; */
 	}
 }
 
 body {
-	color: rgb(var(--foreground-rgb));
-	background: rgb(var(--background-end-rgb));
+	color: rgb(var(--color-focus));
+	background: rgb(var(--color-background));
+	font-feature-settings: "dlig", "tnum", "cv03", "cv04", "cv10", "cpsp";
 }
 
 @layer utilities {
