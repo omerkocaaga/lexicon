@@ -3,11 +3,13 @@ import { AddToBasket, Eye } from "@/app/helper/icons";
 
 export default function ButtonGroup() {
 	return (
-		<div className="absolute z-40 flex top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-6">
-			<IconButton>
+		<div
+			className={`absolute z-40 flex justify-center items-center gap-6 inset-0 w-full h-full group`}
+		>
+			<IconButton inGroup={true}>
 				<Eye className="stroke-focus" w={32} h={32} s={2} />
 			</IconButton>
-			<IconButton>
+			<IconButton inGroup={true}>
 				<AddToBasket className="stroke-focus" w={32} h={32} s={2} />
 			</IconButton>
 		</div>

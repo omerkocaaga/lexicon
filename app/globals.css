@@ -11,9 +11,8 @@
 	--color-background: 255, 255, 255;
 	--color-elevation: 243, 244, 246;
 	--color-brand: 8, 194, 105;
-	/* --alpha: 255 255 255 20; */
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-focus: 255, 255, 255;
@@ -24,9 +23,8 @@
 		--color-background: 0, 0, 0;
 		--color-elevation: 18, 19, 23;
 		--color-brand: 8, 194, 105;
-		/* --alpha: 255 255 255 20; */
 	}
-}
+} */
 
 body {
 	color: rgb(var(--color-focus));

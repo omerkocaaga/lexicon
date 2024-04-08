@@ -1,9 +1,13 @@
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import Header from "@/app/ui/layout/header";
 import Footer from "@/app/ui/layout/footer";
 import "@/app/globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = localFont({
+	src: "font/InterVariable.woff2",
+	display: "swap",
+	variable: "--font-inter",
+});
 
 export const metadata = {
 	title: "Lexicon",
@@ -13,8 +17,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
-			<body className={inter.className}>
+		<html lang="en" suppressHydrationWarning>
+			<body className={`${inter.className}`}>
 				<Header />
 				{children}
 				<Footer />

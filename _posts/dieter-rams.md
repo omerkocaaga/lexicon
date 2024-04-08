@@ -1,6 +1,6 @@
 ---
 title: "Dieter Rams"
-id: 1
+id: 8
 currency: "EUR"
 priceBefore: 12.00
 price: 38.00

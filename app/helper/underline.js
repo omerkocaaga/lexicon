@@ -24,7 +24,7 @@ const Underline = ({ children }) => {
 				height={height}
 				xmlns="http://www.w3.org/2000/svg"
 				preserveAspectRatio="none"
-				className="absolute left-0 w-full overflow-visible"
+				className="absolute left-0 w-full overflow-visible -bottom-1"
 			>
 				<path d={d} strokeWidth={`${strokeWidth}em`} strokeLinecap="round" strokeLinejoin="round" />
 			</svg>
