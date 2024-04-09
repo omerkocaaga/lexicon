@@ -4,7 +4,6 @@ id: 2
 currency: "EUR"
 price: 21.00
 new: true
-imagesBlurData: "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8++HTfwAJcQPQj4u7PwAAAABJRU5ErkJggg=="
 images:
   [
     {

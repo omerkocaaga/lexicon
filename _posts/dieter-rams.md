@@ -2,10 +2,9 @@
 title: "Dieter Rams"
 id: 8
 currency: "EUR"
-priceBefore: 12.00
-price: 38.00
+priceBefore: 38.00
+price: 32.00
 new: false
-imagesBlurData: "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8++HTfwAJcQPQj4u7PwAAAABJRU5ErkJggg=="
 images:
   [
     { id: 0, src: "/content/dieter-rams/01.webp", alt: "Dieter Rams" },

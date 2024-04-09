@@ -5,7 +5,6 @@ currency: "EUR"
 priceBefore: 32.50
 price: 21.00
 new: false
-imagesBlurData: "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8++HTfwAJcQPQj4u7PwAAAABJRU5ErkJggg=="
 images:
   [
     {

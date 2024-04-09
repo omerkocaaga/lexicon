@@ -60,8 +60,12 @@ export default function Footer() {
 					<div className="flex gap-4 flex-col">
 						<div className="text-gray xl:text-lg">Social</div>
 						<div className="flex gap-6">
-							<Instagram w={28} h={28} />
-							<XPlatform w={28} h={28} />
+							<a href="/">
+								<Instagram w={28} h={28} />
+							</a>
+							<a href="/">
+								<XPlatform w={28} h={28} />
+							</a>
 						</div>
 					</div>
 				</div>
