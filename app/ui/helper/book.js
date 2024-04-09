@@ -1,6 +1,3 @@
-"use client";
-
-import { useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NewBadge from "@/app/ui/helper/new-badge";
@@ -8,26 +5,10 @@ import ButtonGroup from "@/app/ui/helper/button-group";
 import BookInfo from "@/app/ui/helper/book-info";
 
 export default function Book({ book }) {
-	const [display, setDisplay] = useState(false);
-	const fig = useRef(null);
-	const showButton = (e) => {
-		e.preventDefault();
-		setDisplay(e.currentTarget === fig.current);
-	};
-
-	const hideButton = (e) => {
-		e.preventDefault();
-		setDisplay(e.currentTarget !== fig.current);
-	};
 	let { title, priceBefore, price, currency, new: isNew, images = [], id } = book;
 	return (
 		<Link href="/" className={`relative group ${id === 0 && "col-span-1 lg:col-span-3 lg:pb-8"}`}>
-			<figure
-				className={`relative ${id === 0 && "lg:grid grid-cols-2"}`}
-				onMouseEnter={(e) => showButton(e)}
-				onMouseLeave={(e) => hideButton(e)}
-				ref={fig}
-			>
+			<figure className={`relative ${id === 0 && "lg:grid grid-cols-2"}`}>
 				{images.map((image) => {
 					let { id: imageID, src, alt } = image;
 					return (
@@ -46,8 +27,8 @@ export default function Book({ book }) {
 								imageID === 0 &&
 								"hover:opacity-0 lg:hover:opacity-100 lg:transition-opacity"
 							}
-							${imageID === 0 && display && id !== 0 && "opacity-0"}
-							${imageID === 0 && display && id === 0 && "opacity-0 lg:opacity-100"}
+							${imageID === 0 && id !== 0 && "group-hover:opacity-0"}
+							${imageID === 0 && id === 0 && "group-hover:opacity-0 lg:group-hover:opacity-100"}
 							${imageID === 0 && id === 0 && "lg:flex-1"}
 
 							`}
@@ -55,7 +36,7 @@ export default function Book({ book }) {
 					);
 				})}
 				{isNew && <NewBadge />}
-				<ButtonGroup display={display} />
+				<ButtonGroup />
 			</figure>
 			<BookInfo title={title} currency={currency} price={price} priceBefore={priceBefore} />
 		</Link>
